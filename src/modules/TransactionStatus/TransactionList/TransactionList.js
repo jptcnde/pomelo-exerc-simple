@@ -67,7 +67,7 @@ function TransactionList(props) {
 
       <tbody>
         {items.map(item => (
-          <tr key={item.key}>
+          <tr key={item.id}>
             {renderCell(item)}
           </tr>
         ))}

@@ -12,6 +12,7 @@ const variants = {
 const weights = {
   body1: 'normal',
   headline: 'bold',
+  caption: 'normal',
 }
 
 const DEFAULT_COLOR = '#212121';
@@ -33,7 +34,7 @@ Typography.defaultProps = {
 
 Typography.propTypes = {
   variant: PropTypes.oneOf(Object.keys(variants)),
-  fontWeight: PropTypes.oneOf(Object.keys(weights)),
+  fontWeight: PropTypes.string,
   align: PropTypes.oneOf(['left', 'right', 'center']),
 };
 

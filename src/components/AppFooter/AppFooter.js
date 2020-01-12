@@ -3,7 +3,8 @@ import React from 'react';
 import Typography from '../Typography';
 
 const Container = styled.footer`
-  padding: 32px;
+  padding: 0 32px;
+  margin: 32px 0 24px;
 `;
 
 function AppFooter() {

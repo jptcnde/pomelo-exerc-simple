@@ -6,7 +6,7 @@ export const TNX_REFUND = 'tnx/refund';
 export const TNX_REFUND_SUCCESS = 'tnx/refund/success';
 export const TNX_REFUND_FAILURE = 'tnx/refund/failure';
 
-export const setTnxList = (tnxList) => ({
+export const setTnxList = (tnxList = []) => ({
   type: TNX_FETCH_SUCCESS,
   tnxList,
 });

@@ -10,7 +10,7 @@ export default [
       contactEmail, contactName,
     }) => (
       <>
-        <Typography>
+        <Typography variant="body1">
           <b>{contactName}</b>
         </Typography>
         <Typography variant="caption">

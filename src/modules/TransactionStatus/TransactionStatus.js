@@ -6,8 +6,14 @@ import Container from '../../components/Container';
 import TransactionList from './TransactionList';
 import { fetchTnxList } from './actions';
 import { getTnxList } from './selectors';
+import Typography from '../../components/Typography';
+import styled from 'styled-components';
 
-function TransactionHistory() {
+const Main = styled.main`
+  margin-top: 16px;
+`;
+
+function TransactionStatus() {
   const dispatch = useDispatch();
   const tnxList = useSelector(getTnxList);
 
@@ -16,14 +22,19 @@ function TransactionHistory() {
   }, [dispatch]);
 
   return (
-    <Container>
+    <Container data-testid="app-container">
       <AppBar />
-      <main>
+      <Main>
+        <Typography variant="headline">
+          Transaction Status
+        </Typography>
+        <br />
+        <br />
         <TransactionList items={tnxList} />
-      </main>
+      </Main>
       <AppFooter />
     </Container>
   )
 }
 
-export default TransactionHistory;
+export default TransactionStatus;
