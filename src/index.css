@@ -49,6 +49,7 @@ table {
 b {
   font-weight: 700;
   line-height: 1.7;
+  margin-top: 24px;
 }
 
 code {

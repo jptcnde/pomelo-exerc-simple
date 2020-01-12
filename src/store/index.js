@@ -10,7 +10,7 @@ import tnxStatusReducer, { initialState } from '../modules/TransactionStatus/red
 const sagaMiddleware = createSagaMiddleware();
 
 const middlewares = [
-  createLogger(),
+  // createLogger(),
   sagaMiddleware,
 ];
 
